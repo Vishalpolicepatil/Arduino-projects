@@ -1,6 +1,6 @@
 # 1. Blinking light 
 **Objective :** \
-To understand the working of the arduino and create a circuit in which the light blinks.
+To understand the working of the arduino and create a circuit in which the light blinks. \
 **Outcomes&Learnings :** \
 I have learnt the basic working principle of arduino and created a circuit in which the light blinks. \
 **Components Required :** \
