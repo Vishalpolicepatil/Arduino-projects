@@ -45,3 +45,23 @@ I have learned the several application of the toggling of the LED's one of them 
 **delay(5000)** stops program for 5 sec.\
 **digitalWrite(2, LOW)** to OFF the green light.\
 Again the same set of program is repeated.
+# ADC (ANALOG TO DIGITAL CONVERTER)
+**Objective :** \
+To understand the working of the ADC by using 10 bit resolution Arduino Microcontroller. \
+**Outcomes&Learning :** \
+I have learned the basic concepts of the Arduino when it is used as the analog to digital converter. \
+**Components Required :** \
+![alt text](https://github.com/Vishalpolicepatil/Arduino-projects/blob/main/Screenshot%202025-08-15%20120101.png?raw=true) \
+**Circuit :** \
+![alt text](https://github.com/Vishalpolicepatil/Arduino-projects/blob/main/Screenshot%202025-08-15%20120024.png?raw=true) \
+![alt text](https://github.com/Vishalpolicepatil/Arduino-projects/blob/main/Screenshot%202025-08-15%20120041.png?raw=true) \
+**Code :** \
+![alt text](https://github.com/Vishalpolicepatil/Arduino-projects/blob/main/Screenshot%202025-08-15%20120144.png?raw=true) \
+**Output :** \
+![alt text](https://github.com/Vishalpolicepatil/Arduino-projects/blob/main/Screenshot%202025-08-15%20120311.png?raw=true) \
+**Explanation :** \
+16F877 AD converter module has maximum 8-analog inputs, except for 28 pin devices that have 5 analog inputs. The result of AD conversion is a 10-bit number. The high and low reference voltages for AD converter are software selectable. AD converter is able to operate even if the device is in sleep condition. There are four registers in AD module, namely, AD result high register (ADRESH), AD result low register (ADFRESL), AD control register 0 (ADCON0) and AD control register 1 (ADCON1). The other registers needed for AD operation are INTCON, PIR1, PIE1, TRISA, PORTA, TRISE, and PORTE. ADCON0 register is as shown in figure below : \
+![alt text](https://github.com/Vishalpolicepatil/Arduino-projects/blob/main/IMG_20250816_205221.jpg?raw=true) \
+ADCON0 allows setting the conversion clock rate, channel selection, to observe the conversion and AD module *ON/OFF* control. ADCON0 is at address 1FH, which is bank 0 of 16F877 register file map. ADC0N1 as shown in the below figure below : \
+![alt text](https://github.com/Vishalpolicepatil/Arduino-projects/blob/main/IMG_20250816_205242.jpg?raw=true) \
+ADCON1 allows selecting the AD conversion result format(right or left justification), the PORTA and PORTE bits for analog or digital use. ADCON1 is at address 9FH, which is in bank 1.ADCON1 bits 0 to 3 define the analog or digital use of PORTA and PORTE pins. If these bits are 0000, then all PORTA and PORTE pins are configured as all of analog purpose. The corresponding data direction registers must be defined for making PORTA and PORTE pins as inputs.
